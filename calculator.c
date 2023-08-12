@@ -2,6 +2,7 @@
 
 int add(int n1,int n2);
 int sub(int n1, int n2);
+int mul(int n1, int n2);
 
 int main(){
     int a,b;
@@ -14,7 +15,8 @@ int main(){
     printf("\nThe sum of two numbers is: %d",sum);
     int difference=sub(a,b);
     printf("\nThe difference between the two numbers is: %d",difference);
-    //mul(a,b);
+    int multiplication=mul(a,b);
+    printf("\nThe product of the two numbers is: %d",multiplication);
     //div(a,b);
 }
 
@@ -24,5 +26,9 @@ int add(int n1, int n2){
 
 int sub(int n1, int n2){
     return (n1-n2);
+}
+
+int multiplication(int n1,int n2){
+    return (n1*n2);
 }
 
